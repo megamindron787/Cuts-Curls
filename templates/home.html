@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuts&Curls</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{url_for('static',filename='home.css')}}"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Cuts&Curls</div>
+    <ul class="nav-links">
+      <li><a href="haircare" class="active">HAIRCARE</a></li>
+      <li><a href="skincare">SKINCARE</a></li>
+      <li><a href="#"></a>
+        <div class="dropdown">HAIRCUT
+            <div class="dropdown-content"><a href="male-hairstyle">Male</a><br>
+                                       <a href="female-hairstyle">FEMALE</a><br>
+            </div>
+        </div>
+      </li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="booking">BOOK ONLINE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">𝕏</a>
+      <a href="#">📷</a>
+      <a href="#">▶</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">WELCOME TO CUTS&CURLS</p>
+      <h1 class="hero-title">Hair Salon Expert</h1>
+      <a href="booking" class="btn-book">Book Now!</a>
+    </div>
+
+  </section>
+
+<section class="info-strip">
+    <div class="info-text">
+        <h2>Welcome to <br><em>Hair Salon</em></h2>
+        <p>Our mission at Cuts&Curls is to provide a friendly, personalized service through a team of highly skilled and creative professionals. Teamwork is our most valuable asset which ensures our clients are always number one, and we strive to exceed your expectations.</p><br><br>
+        <class="info">
+            <h3>What do we offer</h3>
+            <ul>
+                <li>Expert Haircuts & Styling</li>
+                <li>Vibrant Hair Colouring</li>
+                <li>Keratin Treatments</li>
+                <li>Relaxing Hair Spa</li>
+                <li>Bridal Packages</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-photo">
+        <img src="{{url_for('static',filename='home4.jpeg')}}" alt="Hair Salon Model" />
+    </div>
+
+    <div class="info-hours">
+        <h3>Opening Hours</h3>
+    <div class="hour-row">
+      <p class="day">Mon – Fri</p>
+      <p class="time">10:00 AM – 8:30 PM</p>
+    </div>
+
+    <div class="hour-row">
+      <p class="day">Saturday</p>
+      <p class="time">Closed</p><br><br>
+                <div class="info">
+                    <p><b>" Beauty is not in the <br>
+                        face; beauty is a 
+                        light in the hair."<br>
+                              — Cuts&Curls </b></p><br><br>
+                    <p><b>“Hair should never overpower who you are.<br>It should move with you, reflect your personality,<br>and tell your story in the most effortless <br>and natural way possible.”<br>
+                                         --Sam McKnight</b></p>
+                </div>
+     </div>
+
+    </div>
+  </section>
+  
+
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                 <div class="footer-logo">Cuts&Curls</div>
+                     <p>Your destination for expert hair care, vibrant colour, and transformative style. Beauty begins here.</p>
+                </div>
+
+            <div class="footer-col">
+                     <ul>
+                        <li><a href="#">Haircut & Style</a></li>
+                        <li><a href="#">Colour & Highlights</a></li>
+                        <li><a href="#">Keratin Treatment</a></li>
+                        <li><a href="#">Hair Spa</a></li>
+                        <li><a href="#">Bridal Packages</a></li>
+                    </ul>
+            </div>
+
+    <div class="footer-col">
+      <h5>QUICK LINKS</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>CONTACT</h5>
+      <ul>
+        <li><a href="#">📍 PVPIT, Pune</a></li>
+        <li><a href="#">📞 +91 98765 43210</a></li>
+        <li><a href="#">✉️ hello@cuts&curls.in</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Cuts&Curls. All rights reserved. Crafted with love</p>
+  </div>
+
+</footer>
+
+</body>
+</html>

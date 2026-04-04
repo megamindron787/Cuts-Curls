@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #d8cfc2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: absolute;  
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: rgb(255, 255, 255);      
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.25s;
+}
+
+.nav-links a.active {
+  color: #444; 
+}
+
+.nav-links a:hover {
+  color: #5a8a5e;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #444;
+  font-size: 1.3rem;
+  transition: color 0.25s;
+}
+
+.social-icons a:hover {
+  color: #5a8a5e;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.left {
+  width: 45%;
+  border-radius:50px;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  width: 55%;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 80%;
+  border-radius: 42px;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.form-box select {
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.checkbox-group input {
+  width:16px;
+  height:16px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background: linear-gradient(to right, #d4af37, #f5d27a);
+  color: #000;
+  font-weight: bold;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 80%;
+}

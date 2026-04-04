@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salon Services FEMALE</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='female-hairstyle.css')}}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Cuts&Curls</div>
+    <ul class="nav-links">
+      <li><a href="haircare">HAIRCARE</a></li>
+      <li><a href="skincare">SKINCARE</a></li>
+      <li><a href="#"></a>
+        <div class="dropdown">HAIRCUT
+          <div class="dropdown-content">
+            <a href="male-hairstyle">Male</a><br>
+            <a href="female-hairstyle" class="active">FEMALE</a><br>
+          </div>
+        </div>
+      </li>
+      <li><a href="/">ABOUT</a></li>
+      <li><a href="booking">BOOK ONLINE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">𝕏</a>
+      <a href="#">📷</a>
+      <a href="#">▶</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="grid">
+
+      <div class="card image">
+        <img src="{{ url_for('static', filename='f1.jpg') }}" alt="Layered Haircut">
+      </div>
+      <div class="card text">
+        <h2>LAYERED</h2>
+        <p>Soft layered haircut that adds volume, movement, and a natural flow to medium-length hair.</p>
+        <span class="price">₹1,200</span>
+      </div>
+
+      <div class="card image">
+        <img src="{{ url_for('static', filename='f9.jpg') }}" alt="Shag Haircut">
+      </div>
+      <div class="card text">
+        <h2>SHAG</h2>
+        <p>Textured shag cut with soft layers and wispy bangs for a relaxed, voluminous, and effortlessly stylish look.</p>
+        <span class="price">₹1,500</span>
+      </div>
+
+      <div class="card text">
+        <h2>LOB</h2>
+        <p>Long bob with soft layers for a timeless, flattering style that works with most face shapes.</p>
+        <span class="price">₹1,300</span>
+      </div>
+      <div class="card image">
+        <img src="{{ url_for('static', filename='f8.jpg') }}" alt="LOB Haircut">
+      </div>
+
+      <div class="card text">
+        <h2>FEATHER</h2>
+        <p>Soft, textured layers that add movement and dimension to any hair length.</p>
+        <span class="price">₹2,000</span>
+      </div>
+      <div class="card image">
+        <img src="{{ url_for('static', filename='f11.png') }}" alt="Feathered Haircut">
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

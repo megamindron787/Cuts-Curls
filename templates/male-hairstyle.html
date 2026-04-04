@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salon Services MALE</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='male-hairstyle.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Cuts&Curls</div>
+    <ul class="nav-links">
+      <li><a href="/haircare">HAIRCARE</a></li>
+      <li><a href="/skincare">SKINCARE</a></li>
+      <li><a href="#"></a>
+        <div class="dropdown">HAIRCUT
+          <div class="dropdown-content">
+            <a href="/male-hairstyle" class="active">Male</a><br>
+            <a href="/female-hairstyle">FEMALE</a><br>
+          </div>
+        </div>
+      </li>
+      <li><a href="/">ABOUT</a></li>
+      <li><a href="/booking">BOOK ONLINE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">𝕏</a>
+      <a href="#">📷</a>
+      <a href="#">▶</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="grid">
+
+      <div class="card image">
+        <img src="{{ url_for('static', filename='m8.png') }}" alt="fade haircut">
+      </div>
+      <div class="card text">
+        <h2>FADE</h2>
+        <p>Clean low fade with textured top for a sharp, modern, and easy-to-style look.</p>
+        <span class="price">₹1,200</span>
+      </div>
+
+      <div class="card image">
+        <img src="{{ url_for('static', filename='m9.png') }}" alt="wavy haircut">
+      </div>
+      <div class="card text">
+        <h2>Wavy</h2>
+        <p>Natural wavy cut with medium length layers for a relaxed, voluminous, and effortlessly stylish look.</p>
+        <span class="price">₹1,500</span>
+      </div>
+
+      <div class="card text">
+        <h2>Pompadour</h2>
+        <p>Classic pompadour with faded sides and voluminous top for a sharp, bold, and stylish look.</p>
+        <span class="price">₹1,300</span>
+      </div>
+      <div class="card image">
+        <img src="{{ url_for('static', filename='m6.png') }}" alt="pompadour haircut">
+      </div>
+
+      <div class="card text">
+        <h2>TAPER</h2>
+        <p>Clean taper cut with short faded sides and a textured top for a neat, modern everyday style.</p>
+        <span class="price">₹2,000</span>
+      </div>
+      <div class="card image">
+        <img src="{{ url_for('static', filename='m7.png') }}" alt="taper haircut">
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skin Care</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='skincare.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Cuts&Curls</div>
+    <ul class="nav-links">
+      <li><a href="haircare">HAIRCARE</a></li>
+      <li><a href="skincare" class="active">SKINCARE</a></li>
+      <li><a href="#"></a>
+        <div class="dropdown">HAIRCUT
+          <div class="dropdown-content">
+            <a href="male-hairstyle">Male</a><br>
+            <a href="female-hairstyle">FEMALE</a><br>
+          </div>
+        </div>
+      </li>
+      <li><a href="/">ABOUT</a></li>
+      <li><a href="booking">BOOK ONLINE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">𝕏</a>
+      <a href="#">📷</a>
+      <a href="#">▶</a>
+    </div>
+  </nav>
+
+  <section class="menu">
+    <h2>SKIN CARE</h2>
+    <div class="underline"></div>
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <a href="https://functionofbeauty.com/collections/all" target="_blank">
+          <img src="{{ url_for('static', filename='9.png') }}" alt="minimalist skincare">
+        </a>
+        <h3>Minimalist</h3>
+        <p>Design for a modern and cohesive personal care collection.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://ciroabeauty.com/products/guava-vitamin-e-body-serum" target="_blank">
+          <img src="{{ url_for('static', filename='12.png') }}" alt="refreshing skincare">
+        </a>
+        <h3>Refreshing</h3>
+        <p>Body serum labeled "guava & vitamin C"</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.sephora.com/shop/body-wash-shower-gel" target="_blank">
+          <img src="{{ url_for('static', filename='4.png') }}" alt="clean fair skincare">
+        </a>
+        <h3>Clean & Fair</h3>
+        <p>A body wash designed to cleanse and brighten your skin.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://us.sabon.com/collections/body-lotion" target="_blank">
+          <img src="{{ url_for('static', filename='13.png') }}" alt="soothing skincare">
+        </a>
+        <h3>Soothing</h3>
+        <p>A calming body lotion to soothe and moisturize your skin.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://jdssupercare.com/collections/bio-glow" target="_blank">
+          <img src="{{ url_for('static', filename='8.png') }}" alt="radiant skincare">
+        </a>
+        <h3>Radiant</h3>
+        <p>A nourishing body cream to enhance your skin's natural radiance.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.amazon.com/Caudalie-Vinotherapist-Replenishing-Grape-seed-Conditions/dp/B00NNUJJ4C" target="_blank">
+          <img src="{{ url_for('static', filename='7.png') }}" alt="velvety skincare">
+        </a>
+        <h3>Velvety</h3>
+        <p>A luxurious body butter to provide intense moisture and nourishment.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.sephora.com/shop/body-cream-body-lotion" target="_blank">
+          <img src="{{ url_for('static', filename='3.png') }}" alt="nourishing skincare">
+        </a>
+        <h3>Nourishing</h3>
+        <p>A nourishing body cream to enhance your skin's natural radiance.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.amazon.com/Laneige-Sleeping-Berry/dp/B07XXPHQZK" target="_blank">
+          <img src="{{ url_for('static', filename='1.png') }}" alt="hydrating skincare">
+        </a>
+        <h3>Hydrating</h3>
+        <p>A refreshing body mist to hydrate and revitalize your skin.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://rescuemd.com/products/restorative-lip-treatment" target="_blank">
+          <img src="{{ url_for('static', filename='15.png') }}" alt="glossy skincare">
+        </a>
+        <h3>Glossy</h3>
+        <p>A shine-enhancing body oil to give your skin a healthy glow.</p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

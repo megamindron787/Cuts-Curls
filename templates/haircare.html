@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hair Care</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='haircare.css')}}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Cuts&Curls</div>
+    <ul class="nav-links">
+      <li><a href="haircare" class="active">HAIRCARE</a></li>
+      <li><a href="skincare">SKINCARE</a></li>
+      <li><a href="#"></a>
+        <div class="dropdown">HAIRCUT
+            <div class="dropdown-content"><a href="male-hairstyle">Male</a><br>
+                                       <a href="female-hairstyle">FEMALE</a><br>
+            </div>
+        </div>
+      </li>
+      <li><a href="/">ABOUT</a></li>
+      <li><a href="booking">BOOK ONLINE</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#">f</a>
+      <a href="#">𝕏</a>
+      <a href="#">📷</a>
+      <a href="#">▶</a>
+    </div>
+  </nav>
+
+  <section class="menu">
+    <h2>HAIR CARE</h2>
+    <div class="underline"></div>
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <a href="https://www.amazon.com/Arencia-Overnight-Smoothie-collagen-Niacinamide/dp/B0DNMJDMTW" target="_blank">
+          <img src="{{ url_for('static', filename='h1.png') }}" alt="elegant hair care">
+        </a>
+        <h3>Elegant</h3>
+        <p>A sophisticated hair care routine for a polished and refined look.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.shuuemuraartofhair-usa.com/collections/deep-cleansers/delicate-comfort-clarifying-shampoo.html" target="_blank">
+          <img src="{{ url_for('static', filename='h2.png') }}" alt="revitalizing hair care">
+        </a>
+        <h3>Revitalizing</h3>
+        <p>A rejuvenating hair treatment to restore vitality and shine.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://oway.com/products/flux-potion-240ml" target="_blank">
+          <img src="{{ url_for('static', filename='h3.png') }}" alt="smoothness hair care">
+        </a>
+        <h3>Smoothness</h3>
+        <p>A hair treatment designed to smooth and tame frizz for a sleek, polished look.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://greenglowbygarima.com/" target="_blank">
+          <img src="{{ url_for('static', filename='h4.png') }}" alt="calming hair care">
+        </a>
+        <h3>Calming</h3>
+        <p>Gentle formula that relaxes your skin while providing deep hydration.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.sephora.com/brand/bondi-boost/shampoo-conditioner" target="_blank">
+          <img src="{{ url_for('static', filename='h5.png') }}" alt="nourishing hair care">
+        </a>
+        <h3>Luminious</h3>
+        <p>Nourishing treatment that adds shine and smoothness for healthy-looking hair.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.sephora.com/shop/hair-care-sets" target="_blank">
+          <img src="{{ url_for('static', filename='h7.png') }}" alt="silky hair care">
+        </a>
+        <h3>Silky</h3>
+        <p>Deep conditioning formula that smooths strands and adds softness for manageable hair.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.lush.com/us/en_us/p/growth-haircare-gift" target="_blank">
+          <img src="{{ url_for('static', filename='h10.png') }}" alt="strengthening hair care">
+        </a>
+        <h3>Strengthening</h3>
+        <p>Powerful formula that fortifies hair and reduces breakage for stronger, more resilient strands.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://www.amazon.com/MONDAY-HAIRCARE-Conditioner-Bathroom-Recyclable/dp/B0B93XDF8V" target="_blank">
+          <img src="{{ url_for('static', filename='h8.png') }}" alt="smooth care">
+        </a>
+        <h3>Smooth Care</h3>
+        <p>Silky treatment that tames frizz and leaves hair soft, sleek, and manageable.</p>
+      </div>
+
+      <div class="menu-card">
+        <a href="https://bondiboost.com/collections/shampoo-conditioner" target="_blank">
+          <img src="{{ url_for('static', filename='h9.png') }}" alt="shine boost">
+        </a>
+        <h3>Shine Boost</h3>
+        <p>Silky treatment that tames frizz and leaves hair soft, sleek, and manageable.</p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

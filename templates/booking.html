@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salon Form</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Cuts&Curls</div>
+
+  <ul class="nav-links">
+    <li><a href="haircare" class="active">HAIRCARE</a></li>
+    <li><a href="skincare">SKINCARE</a></li>
+
+    <li class="dropdown">
+      <a href="#">HAIRCUT</a>
+      <div class="dropdown-content">
+        <a href="male-hairstyle">Male</a><br>
+        <a href="female-hairstyle">FEMALE</a>
+      </div>
+    </li>
+
+    <li><a href="/">ABOUT</a></li>
+    <li><a href="booking">BOOK ONLINE</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+
+  <div class="social-icons">
+    <a href="#">f</a>
+    <a href="#">𝕏</a>
+    <a href="#">📷</a>
+    <a href="#">▶</a>
+  </div>
+</nav>
+
+<section class="container">
+
+  <div class="left">
+    <img src="{{ url_for('static', filename='booking.jpeg') }}" alt="Model Image">
+  </div>
+
+  <div class="right">
+    <form class="form-box" method="POST">
+
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="mobile" placeholder="Mobile" required>
+
+      <select name="gender" required>
+        
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+
+      <select name="service" required>
+        <option value="">Service Type</option>
+        <option>Skin care</option>
+        <option>Haircut</option>
+        <option>Hair Treatment</option>
+      </select>
+
+      <input type="date" name="date" required>
+
+      <select name="time" required>
+        <option value="">Timing Slot</option>
+        <option>10:00AM-11:00AM</option>
+        <option>11:00AM-12:00PM</option>
+        <option>12:00PM-1:00PM</option>
+        <option>1:00PM-2:00PM</option>
+        <option>2:00PM-3:00PM</option>
+        <option>4:00PM-5:00PM</option>
+        <option>5:00PM-6:00PM</option>
+        <option>6:00PM-7:00PM</option>
+        <option>7:00PM-8:00PM</option>
+      </select>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" required>
+        <label for="terms"> I agree to Terms & Conditions</label>
+      </div>
+
+      <button type="submit">BOOK NOW!!</button>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
