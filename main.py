@@ -2,6 +2,10 @@ from flask import Flask,url_for,render_template,redirect,request,session
 import sqlite3
 from database import appointment
 import smtplib
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
 appointment()
@@ -11,7 +15,7 @@ app.secret_key = "hello123"
 
 def send_email(email, name, service, date, time):
     sender_email = "ajinkyad537@gmail.com"
-    sender_password = "wzqy xvsv cndy noij"
+    sender_password = os.getenv("EMAIL_PASSWORD")
     receiver_email = email
 
     subject = "Appointment Confirmation"
